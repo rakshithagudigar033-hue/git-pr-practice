@@ -1,6 +1,9 @@
 def login(username, password):
 
-    if username == "admin" and password == "1234":
+    if not username or not password:
+        print("Username and password are required")
+
+    elif username == "admin" and password == "1234":
         print("Login successful")
 
     else:
